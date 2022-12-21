@@ -16,11 +16,11 @@ else{
     $today = strtotime((date("Y-m-d",$t)));
     $url = "http://api.openweathermap.org/data/2.5/weather?q=$city&dt=$today&appid=49c0bad2c7458f1c76bec9654081a661";
 }
-    $ch = curl_init();
-    curl_setopt($ch, CURLOPT_URL, $url);
-    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-    $result = curl_exec($ch);
-    curl_close($ch);
+    $open_weather = curl_init();
+    curl_setopt($open_weather, CURLOPT_URL, $url);
+    curl_setopt($open_weather, CURLOPT_RETURNTRANSFER, true);
+    $result = curl_exec($open_weather);
+    curl_close($open_weather);
     $result = json_decode($result, true);
     // echo '<pre>';
     // print_r($result);
