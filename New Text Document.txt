@@ -1,0 +1,1 @@
+php phpDocumentor.phar -d D:\Website\weather-php -t D:\Website\weather-php\do

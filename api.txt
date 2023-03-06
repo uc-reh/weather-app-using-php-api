@@ -1,4 +1,0 @@
-key = 0bb35acb0d9ee1db4d482adc384b45dc
-
-
-https://openweathermap.org/history
